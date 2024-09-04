@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*--------------------- Search bar ---------------------*/
+input.searchBbar {
+  height: 45px;
+  font-size: 1rem;
+  outline: none;
+
+  &:focus {
+    transition: 0.35s ease;
+
+    &::-webkit-input-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+
+    &:-ms-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+  }
+}
+
+
+.react-datepicker__input-container{
+height: 100%;
+input{
+    padding-left: 3px;
+    font-size: 12px;
+    color: gray;
+    width: 100% !important;
+    &:focus-visible{
+      outline: none;
+    }
+    &::placeholder{
+      font-size: 14px;
+    }
+  }
+
+}
